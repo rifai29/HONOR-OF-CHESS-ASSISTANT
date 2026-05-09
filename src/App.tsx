@@ -401,7 +401,7 @@ export default function App() {
           <div className="flex items-center gap-2 md:gap-3 group cursor-pointer overflow-hidden">
             <div className="flex flex-col overflow-hidden">
               <h1 className="font-bold text-sm md:text-lg tracking-tight leading-none truncate uppercase">
-                PLANOGRAM <span className="hidden sm:inline">ASSISTANT</span>
+                KING OF <span className="hidden sm:inline">CHESS</span>
               </h1>
               <div className="flex items-center gap-1.5 mt-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
