@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import * as XLSX from 'xlsx';
 
 const INITIAL_SETTINGS: GondolaSettings = {
-  name: "PLANOGRAM AA4",
+  name: "CHESS SETUP AA4",
   store: "RIFAKHI RINDHOI SETIAWAN",
   date: new Date().toISOString().split('T')[0],
   category: "Beverages",
@@ -52,7 +52,7 @@ const INITIAL_PRODUCTS: Product[] = [
 
 export default function App() {
   const [state, setState] = useState<PlanogramState>(() => {
-    const saved = localStorage.getItem('planogram_state_v9');
+    const saved = localStorage.getItem('chess_setup_state_v1');
     if (saved) {
       try {
         return JSON.parse(saved);
@@ -84,7 +84,7 @@ export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem('planogram_state_v9', JSON.stringify(state));
+    localStorage.setItem('chess_setup_state_v1', JSON.stringify(state));
   }, [state]);
 
   const activeGondola = state.gondolas.find(g => g.id === state.activeGondolaId) || state.gondolas[0];
@@ -263,7 +263,7 @@ export default function App() {
       XLSX.utils.book_append_sheet(wb, ws, safeName);
     });
 
-    XLSX.writeFile(wb, `Planogram_Full.xlsx`);
+    XLSX.writeFile(wb, `Chess_Setup_Full.xlsx`);
     toast.success("Excel exported successfully with separate sheets for each Rak.");
   };
 
