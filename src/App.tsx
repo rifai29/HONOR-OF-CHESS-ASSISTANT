@@ -464,7 +464,7 @@ export default function App() {
         </AnimatePresence>
 
         <div className={cn(
-          "fixed md:relative inset-y-0 left-0 z-50 md:z-auto transition-transform duration-500 transform md:translate-x-0 w-[85%] max-w-[320px] md:w-80 h-full md:h-full md:shadow-none p-1 md:p-0",
+          "fixed md:relative inset-y-0 left-0 z-50 md:z-auto transition-transform duration-500 transform md:translate-x-0 w-[60%] max-w-[320px] md:w-80 h-full md:h-full md:shadow-none p-1 md:p-0",
           isSidebarOpen ? "translate-x-0" : "-translate-x-[110%]"
         )}>
           <Sidebar 
