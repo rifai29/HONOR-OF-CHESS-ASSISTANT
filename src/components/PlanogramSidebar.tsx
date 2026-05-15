@@ -154,7 +154,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   return (
     <aside className="w-full md:w-80 bg-white/95 backdrop-blur-md rounded-[2rem] flex flex-col h-full overflow-hidden z-20">
       {/* Mobile Header */}
-      <div className="flex items-center justify-end px-4 pt-2 pb-1 md:hidden">
+      <div className="flex items-center justify-end px-4 pt-1 pb-0 md:hidden">
         <Button 
           variant="ghost" 
           size="icon" 
@@ -165,7 +165,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </Button>
       </div>
 
-      <div className="px-4 mt-0 md:mt-2 mb-2">
+      <div className="px-4 mt-0 md:mt-1 mb-2">
         <div className="bg-gray-100/80 p-1 rounded-2xl flex gap-1">
           {[
             { id: 'products', label: 'Catalog', icon: Package },
