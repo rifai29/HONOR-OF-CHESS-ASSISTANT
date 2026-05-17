@@ -153,17 +153,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <aside className="w-full md:w-80 bg-white/95 backdrop-blur-md rounded-[2rem] flex flex-col h-full overflow-hidden z-20">
-      {/* Mobile Header */}
-      <div className="flex items-center justify-end px-4 pt-1 pb-0 md:hidden">
-        <Button 
-          variant="ghost" 
-          size="icon" 
-          onClick={onCloseMobile}
-          className="h-8 w-8 rounded-xl bg-gray-100 text-gray-500"
-        >
-          <X size={16} />
-        </Button>
-      </div>
+      {/* Mobile Header Removed */}
 
       <div className="px-4 mt-0 md:mt-1 mb-2">
         <div className="bg-gray-100/80 p-1 rounded-2xl flex gap-1">
